@@ -5,6 +5,6 @@ function myDictionary() {
         Age: 2, //Specifies the age
         Sound: "Meow!" //Specifies the sound
     };
-    document.getElementById("Dictionary").innerHTML = Cat.Color; //This will display the Color value
     delete Cat.Age; //this statement deletes the Age
+    document.getElementById("Dictionary").innerHTML = Cat.Age; //This will display "undefined"
     }
