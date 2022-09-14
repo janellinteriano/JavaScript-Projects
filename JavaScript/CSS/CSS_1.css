@@ -1,0 +1,22 @@
+input[type = text] {
+    background-color: lightgrey;
+    color: black;
+    border: 2px solid darkslategray;
+    outline: none;
+    margin: 4px 4px;
+}
+
+label[for] {
+    color: darkslategray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+input[type = submit] {
+    background-color: darkcyan;
+    color: azure;
+    border: 2px solid darkslategray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
