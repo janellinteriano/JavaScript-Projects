@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="main">
+			<h2>Get The Latest Content:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+			</div>
+            <div class = "moreContent" id = "moreContent">
+            <button id = "b" onclick = "myFunction();">Click Here</button> <!--defining my own button-->
+            </div>
+        </div>
+    <script type="text/javascript">
+            //STEP 1
+			var ajax = new XMLHttpRequest();
+            var mContent = new XMLHttpRequest(); //defining my variable
+
+            //STEP 2
+            ajax.open('GET', 'content.html');
+            mContent.open('GET', 'mycontent.html') //links to my new html file with content
+
+            //STEP 3
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState == 4) {
+                    document.getElementById('content').innerHTML = ajax.responseText;
+                }
+            }
+
+            mContent.onreadystatechange = function myFunction() { //function for my button
+                if (mContent.readyState == 4) {
+                document.getElementById("moreContent").innerHTML = mContent.responseText;
+                }
+            }
+
+
+            //STEP 4
+                function getContent() {
+                    ajax.send();
+                    document.getElementById('btn_content').style.display = 'none';
+                }
+            
+                function myFunction() {
+                    mContent.send();
+                    document.getElementById('b').style.display = 'none'; //will display 'This is my string'
+                }
+	</script>
+    </body>
+</html>
