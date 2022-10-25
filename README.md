@@ -11,6 +11,5 @@ These are a few small projects I made using JavaScript.
   <br>
   <h1>Pac-Man Tic-Tac-Toe Game</h1>
   <p>This is a Pac-Man themed game of Tic-Tac-Toe. Users can play rounds of the game against the computer. There are different sound effects played throughout the game.</p>
-  <br>
   <h1>Calculator</h1>
   <p>This is a simple project where users can add, subtract, multiply, and divide on a sleek web version of a calculator.
