@@ -33,8 +33,8 @@ div {
 }
 
 #frmMenu {
-    width: 600px;
-    height: 200px;
+    width: 1000px;
+    height: 500px;
     margin: 40px auto;
 }
 
@@ -47,8 +47,8 @@ div {
     width: 200px;
     height: 190px;
     margin: 0 auto;
-    float: right;
-    padding-top: 20px;
+    float: left;
+    padding-top: 30px;
 }
 
 .left {
@@ -60,13 +60,13 @@ div {
 
 .middle {
    float: left;
+   padding-right: 35px;
 }
 
 .right {
     width: 200px;
     height: 200px;
     float: right;
-    padding-left: 35px;
 }
 
 #showText {
@@ -84,7 +84,7 @@ div {
 }
 
 #btnOrder {
-    margin: 20px 0px 0px 155px;
+    margin: 20px 0px 0px 190px;
     width: 100px;
     height: 40px;
     font-weight: bold;
